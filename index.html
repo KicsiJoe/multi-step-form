@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css">
+<script src="./app.js" defer></script>
+    <title>Frontend Mentor | Multi-step form TOTO</title>
+
+  </head>
+  <body>
+    <!-- Sidebar start -->
+<aside class="top" >
+  <nav>
+ <div class="nav-item-box active-step">
+  <div class="left-nav-item-circle">1</div>
+  <div class="right-nav-item-text-box">
+    <div class="step"> Step 1</div>
+    <div class="step-explanation">Your info</div>
+  </div>
+ </div>
+ <div class="nav-item-box ">
+  <div class="left-nav-item-circle">
+2
+  </div>
+  <div class="right-nav-item-text-box">
+    <div class="step">Step 2</div>
+    <div class="step-explanation">Select plan</div>
+  </div>
+ </div>
+ <div class="nav-item-box">
+  <div class="left-nav-item-circle">
+3
+  </div>
+  <div class="right-nav-item-text-box">
+    <div class="step">Step 3</div>
+    <div class="step-explanation">Add-ons</div>
+  </div>
+ </div>
+ <div class="nav-item-box">
+  <div class="left-nav-item-circle">
+4
+  </div>
+  <div class="right-nav-item-text-box">
+    <div class="step">Step 4</div>
+    <div class="step-explanation">Summary</div>
+  </div>
+ </div>
+  </nav>
+</aside>
+          
+<section class="section-1 active">
+  <!-- Step 1 start -->
+  <aside class="left" >
+    <nav>
+   <div class="nav-item-box active-step">
+    <div class="left-nav-item-circle">1</div>
+    <div class="right-nav-item-text-box">
+      <div class="step"> Step 1</div>
+      <div class="step-explanation">Your info</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  2
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 2</div>
+      <div class="step-explanation">Select plan</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  3
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 3</div>
+      <div class="step-explanation">Add-ons</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  4
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 4</div>
+      <div class="step-explanation">Summary</div>
+    </div>
+   </div>
+    </nav>
+  </aside>
+  <div>
+    <div class="flex-container">
+  <h1 class="main-title">Personal info</h1> 
+  <p>Please provide your name, email address, and phone number.</p>
+    <div class="label-error-box name">
+      <label for="name">Name</label><span class="name">This field is required</span> </div> 
+      <input type="text" id="name"  placeholder="e.g. Stephen King"></input> 
+      <div class="label-error-box  email"> <!--active -->
+  <label for="email">Email Address</label><span class="email">This field is required</span> </div>
+  <input type="text" placeholder="e.g. stephenking@lorem.com"  id="email"/>  
+
+  <div class="label-error-box phone ">
+  <label for="phone">Phone Number</label><span class="phone">This field is required</span></div>
+  <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" >
+  <div class="navigation-container">
+
+    <button class="back">Go Back</button>
+    <button class="next">Next
+      Step</button>
+
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section-2  hide">
+
+  <!-- Step 2 start -->
+  <aside class="left" >
+    <nav>
+   <div class="nav-item-box ">
+    <div class="left-nav-item-circle">1</div>
+    <div class="right-nav-item-text-box">
+      <div class="step"> Step 1</div>
+      <div class="step-explanation">Your info</div>
+    </div>
+   </div>
+   <div class="nav-item-box active-step">
+    <div class="left-nav-item-circle">
+  2
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 2</div>
+      <div class="step-explanation">Select plan</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  3
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 3</div>
+      <div class="step-explanation">Add-ons</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  4
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 4</div>
+      <div class="step-explanation">Summary</div>
+    </div>
+   </div>
+    </nav>
+  </aside>
+
+  <div class="flex-container">
+    <div>
+    <h1 class="main-title">Select your plan</h1> 
+    <p>You have the option of monthly or yearly billing.</p>
+
+    <div class="cardsBox">
+      <div class="card selected" data-idx="0">
+        <img src="./assets/images/icon-arcade.svg" alt="">
+        <div class="titleWithMoney">
+          <div class="titleText">
+            Arcade
+          </div>
+          <div class="money">
+            $9/mo
+          </div>
+          <div class="hide">2 months free</div>
+        </div>
+      </div>
+      <div class="card" data-idx="1">
+        <img src="./assets/images/icon-advanced.svg" alt="">
+        <div class="titleWithMoney">
+          <div class="titleText">
+            Advanced
+          </div>
+          <div class="money">
+            $12/mo
+          </div>
+          <div class="hide">2 months free</div>
+        </div>
+
+      </div>
+      <div class="card" data-idx="2">
+        <img src="./assets/images/icon-pro.svg" alt="">
+        <div class="titleWithMoney">
+          <div class="titleText">
+            Pro
+          </div>
+          <div class="money">
+            $15/mo
+          </div>
+          <div class="hide">2 months free</div>
+        </div>
+
+      </div>
+      <div class="period">
+        <input type="checkbox" name="" id="trueFalse">
+        <span class="selectedOption" id="monthly"  >Monthly</span>
+        <label for="trueFalse" id="labalFortrueFalse">
+         <div class="bulletBox">
+           <span class="bullet">
+           </span>
+         </div> 
+        </label>  
+        <span class="" id="yearly">Yearly</span>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-container">
+
+    <button class="back">Go Back</button>
+    <button class="next">Next
+      Step</button>
+    </div>
+
+  </div>
+  <!-- Step 2 end -->
+
+</section>
+
+<section class="section-3 hide">
+  <!-- Step 3 start -->
+  <aside class="left" >
+    <nav>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">1</div>
+    <div class="right-nav-item-text-box">
+      <div class="step"> Step 1</div>
+      <div class="step-explanation">Your info</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  2
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 2</div>
+      <div class="step-explanation">Select plan</div>
+    </div>
+   </div>
+   <div class="nav-item-box active-step">
+    <div class="left-nav-item-circle">
+  3
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 3</div>
+      <div class="step-explanation">Add-ons</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  4
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 4</div>
+      <div class="step-explanation">Summary</div>
+    </div>
+   </div>
+    </nav>
+  </aside>
+  <div class="flex-container">
+    <div>
+    <h1 class="main-title">Pick add-ons</h1> 
+    <p>Add-ons help enhance your gaming experience.</p>
+
+    <div class="checkbox-cards">
+      <div class=" checkbox-card" data-idx="0">
+        <input type="checkbox" class="normal" name="" id="checkbox-0">
+        <div class="titleWithMoney checkbox-description">
+          <div class="titleText checkbox-title">
+            Online service
+          </div>
+          <div class="money">
+            Access to multiplayer games
+          </div>
+        </div>
+        <div class="price-period">+$1/mo</div>
+      </div>
+      <!-- EDDIG JO -->
+      <div class=" checkbox-card" data-idx="1">
+        <input type="checkbox" class="normal" name="" id="checkbox-1">
+        <div class="titleWithMoney checkbox-description">
+          <div class="titleText checkbox-title">
+            Larger storage
+          </div>
+          <div class="money">
+            Extra 1TB of cloud save
+          </div>
+        </div>
+        <div class="price-period">+$2/mo</div>
+      </div>
+
+      <div class=" checkbox-card" data-idx="2">
+        <input type="checkbox" class="normal" name="" id="checkbox-2">
+        <div class="titleWithMoney checkbox-description">
+          <div class="titleText checkbox-title">
+            Customizable Profile
+          </div>
+          <div class="money">
+            Custom theme on your profile
+          </div>
+        </div>
+        <div class="price-period">+$2/mo</div>
+      </div>
+    </div>
+    </div>
+  <div class="navigation-container">
+
+    <button class="back">Go Back</button>
+    <button class="next">Next
+      Step</button>
+
+  </div>
+  <!-- Step 3 end -->
+
+</section>
+<section class="section-4 hide">
+  
+  <!-- Step 4 start -->
+  <aside class="left" >
+    <nav>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">1</div>
+    <div class="right-nav-item-text-box">
+      <div class="step"> Step 1</div>
+      <div class="step-explanation">Your info</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  2
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 2</div>
+      <div class="step-explanation">Select plan</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  3
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 3</div>
+      <div class="step-explanation">Add-ons</div>
+    </div>
+   </div>
+   <div class="nav-item-box active-step">
+    <div class="left-nav-item-circle">
+  4
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 4</div>
+      <div class="step-explanation">Summary</div>
+    </div>
+   </div>
+    </nav>
+  </aside>
+  <div class="flex-container">
+    <div class="inner-box">
+    <h1 class="main-title">Finishing up</h1> 
+    <p>Double-check everything looks OK before confirming.</p>
+    <div class="main">
+      <div class="flex-box-container">
+        <div class="main-preis">
+          <h2 class="sec-4-title">Arcade (Monthly)</h2>
+          <p class="change">Change</p>
+        </div>
+        <div class="sec-4-money">
+          $9/mo
+        </div>
+      </div>
+      <hr/>
+      <div class="prices">
+      </div>
+    </div>
+  
+  <div>
+    <div class="total-box flex-box-container">
+      <div class="total">Total (per month/year)</div>
+      <div class="total-sum">+$12/mo</div>
+    </div>
+  </div>
+  <div class="navigation-container">
+    <button class="back">Go Back</button>
+    <button class="next confirm">Confirm</button>
+  </div>
+</div>
+  <!-- Step 4 end -->
+</section>
+<section class="section-5 hide">
+
+  <!-- Step 5 start -->
+  <aside class="left" >
+    <nav>
+   <div class="nav-item-box ">
+    <div class="left-nav-item-circle">1</div>
+    <div class="right-nav-item-text-box">
+      <div class="step"> Step 1</div>
+      <div class="step-explanation">Your info</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  2
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 2</div>
+      <div class="step-explanation">Select plan</div>
+    </div>
+   </div>
+   <div class="nav-item-box">
+    <div class="left-nav-item-circle">
+  3
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 3</div>
+      <div class="step-explanation">Add-ons</div>
+    </div>
+   </div>
+   <div class="nav-item-box active-step">
+    <div class="left-nav-item-circle">
+  4
+    </div>
+    <div class="right-nav-item-text-box">
+      <div class="step">Step 4</div>
+      <div class="step-explanation">Summary</div>
+    </div>
+   </div>
+    </nav>
+  </aside>
+  <div class="flex-container">
+    <div class="img-box"><img src="./assets/images/icon-thank-you.svg" alt=""></div>
+    <div class="thank">Thank you!</div>
+    <div class="confirm-text"> Thanks for confirming your subscription! We hope you have fun
+      using our platform. If you ever need support, please feel free to email us
+      at support@loremgaming.com.</div>
+  </div>
+  
+  <!-- <div class="navigation-container">
+
+    <button class="back">Go Back</button>
+    <button class="next">Next
+      Step</button>
+
+  </div> -->
+  <!-- Step 5 end -->
+</section>
+
+    <footer>
+      <div class="footer-container">
+
+        <button class="back">Go Back</button>
+        <button class="next" >Next
+          Step</button>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
